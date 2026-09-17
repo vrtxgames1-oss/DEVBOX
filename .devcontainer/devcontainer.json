@@ -1,0 +1,9 @@
+{
+  "name": "VNC Unblocker",
+  "build": { "dockerfile": "Dockerfile" },
+  "forwardPorts": [6080, 5901],
+  "portsAttributes": {
+    "6080": { "label": "VNC Desktop - CLICK HERE", "onAutoForward": "openBrowser" }
+  },
+  "remoteUser": "ubuntu"
+}
